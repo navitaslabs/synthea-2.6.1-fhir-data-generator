@@ -45,10 +45,12 @@ adjust this file to activate these features.  See the [wiki](https://github.com/
 for more details.
 
 To generate data acceptable to Fhir works on AWS, set:
+```
 exporter.fhir.transaction_bundle = true
 exporter.fhir.use_us_core_ig = false
 exporter.hospital.fhir.export = false
 exporter.practitioner.fhir.export = false
+```
 
 ### Generate Synthetic Patients
 Generating the population one at a time...
