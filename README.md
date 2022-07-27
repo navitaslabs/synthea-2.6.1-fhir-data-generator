@@ -44,6 +44,14 @@ By default, synthea does not generate CCDA, CPCDA, CSV, or Bulk FHIR (ndjson). Y
 adjust this file to activate these features.  See the [wiki](https://github.com/synthetichealth/synthea/wiki)
 for more details.
 
+To generate data acceptable to Fhir works on AWS, set:
+```
+exporter.fhir.transaction_bundle = true
+exporter.fhir.use_us_core_ig = false
+exporter.hospital.fhir.export = false
+exporter.practitioner.fhir.export = false
+```
+
 
 
 ### Generate Synthetic Patients
